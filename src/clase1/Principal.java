@@ -306,8 +306,43 @@ public static void IMC() {
         {
             System.out.println("obesidad");
         }
-    }
+  }
+   public static void Sumatoria(){
+      //Programa que calcula la suma de dulces de halloweeen que recibeun niño en Halloween 
+      
+    int totalDulces, dulcesActual;
+    totalDulces=0;
+    dulcesActual=-1;
+    
+    while(dulcesActual != 0){
+       System.out.println("Ingrese el numero de dulces de la casa actual");
+       dulcesActual=input.nextInt();
+       if(dulcesActual >=0){
+        totalDulces=totalDulces+dulcesActual;
+    }else{
+            System.out.println("error");
+       }
+  }
+       System.out.println("ud recogio un total de:"+ totalDulces);
 }
+   public static void contraseña() { 
+       
+       while (true){
+                      
+                    System.out.println("Ingrese su contraseña");
+                    String contraseña=input.nextLine();
+                        System.out.println("Por su seguridad ingrese nuevamente su contraseña");
+                     String verificacion=input.nextLine();
+                            if (contraseña.equals(verificacion)) {       // se usa equals cuando hay que comprara strings no se puede usar == o !=
+                                System.out.println("La contraseña es correcta.");
+                                break;
+                            } else {
+                                System.out.println("La contraseña es incorrecta. Intente de nuevo.");
+         }          
+     }
+  }
+}
+    
     
 
 
