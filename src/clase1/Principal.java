@@ -341,7 +341,30 @@ public static void IMC() {
          }          
      }
   }
+
+public static void p3Punto3(){
+   
+   String pssword;
+   while (true){
+       System.out.println("Ingrese su contraseña");
+        pssword=input.next();
+        //txt.length   para saber cuantas letras tiene un texto
+        if(pssword.length() >=8){
+            System.out.println("Contraseña correcta");
+            break;
+        }else{
+            System.out.println("La contraseña es incorrecta");
+        }
+     }
+  }  
 }
+
+
+
+
+
+    
+
     
     
 
